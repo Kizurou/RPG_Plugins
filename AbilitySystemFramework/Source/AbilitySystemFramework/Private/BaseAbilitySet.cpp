@@ -55,7 +55,7 @@ void FBaseAbilitySet_GrantedHandles::TakeFromAbilitySystem(UBaseAbilitySystemCom
 
 	for (UAttributeSet* Set : GrantedAttributeSets)
 	{
-		BaseASC->GetSpawnedAttributes_Mutable().Remove(Set);
+		BaseASC->RemoveSpawnedAttribute(Set);
 	}
 
 	AbilitySpecHandles.Reset();
