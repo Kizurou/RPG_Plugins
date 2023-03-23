@@ -22,8 +22,9 @@ protected:
 	// Updates the item data ensuring ItemInstance and ItemDefinition are valid
 	virtual void UpdateMesh();
 
+#if WITH_EDITOR
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
-
+#endif
 	TObjectPtr<UInventoryItemInstance> ItemInstance;
 
 	

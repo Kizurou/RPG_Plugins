@@ -35,6 +35,7 @@ void AItemActorBase::UpdateMesh()
 	}
 }
 
+#if WITH_EDITOR
 void AItemActorBase::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)
 {
 	if (PropertyChangedEvent.GetPropertyName() == ItemDefName)
@@ -42,4 +43,4 @@ void AItemActorBase::PostEditChangeProperty(FPropertyChangedEvent& PropertyChang
 		UpdateMesh();
 	}
 }
-
+#endif
