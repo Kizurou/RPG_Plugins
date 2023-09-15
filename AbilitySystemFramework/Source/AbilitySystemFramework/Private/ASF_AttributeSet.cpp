@@ -82,7 +82,7 @@ void UASF_AttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallba
 			SourceCharacter = Cast<AASF_BaseCharacter>(SourceActor);
 		}
 
-		// Set the causer actor based on context if it's set![](C:/Users/ryuji/AppData/Local/Temp/hqdefault.webp)
+		// Set the causer actor based on context if it's set!
 		if (Context.GetEffectCauser())
 		{
 			SourceActor = Context.GetEffectCauser();
